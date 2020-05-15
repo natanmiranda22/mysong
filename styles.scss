@@ -1,0 +1,42 @@
+
+@import 'base';
+
+
+/* Nesting */
+.top-bar {
+	h1 {
+		font-size: 4rem;
+		color: $black;
+		background-color: $primary-color;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+	.date {
+		color: $primary-color;
+		font-size: small;
+	}
+}
+
+/* Mixins */
+@mixin redbox($color,$border,$bg) {
+	color: $color;
+	border: $border;
+	background-color: $bg;
+}
+
+.box {
+	@include redbox(#000, 3px solid #ddd, red);
+}
+
+
+/* Extend / inhance */
+%message-shared {
+  border: 3px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+.success {
+	@extend %message-shared;
+	border-color: green;
+}

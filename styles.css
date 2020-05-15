@@ -1,0 +1,28 @@
+/* Variables - Colors */
+/* Nesting */
+.top-bar h1 {
+  font-size: 4rem;
+  color: #111;
+  background-color: #ddd; }
+.top-bar p {
+  font-size: 1.5rem; }
+.top-bar .date {
+  color: #ddd;
+  font-size: small; }
+
+/* Mixins */
+.box {
+  color: #000;
+  border: 3px solid #ddd;
+  background-color: red; }
+
+/* Extend / inhance */
+.success {
+  border: 3px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+/*# sourceMappingURL=styles.css.map */
